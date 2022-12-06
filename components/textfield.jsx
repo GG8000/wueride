@@ -12,7 +12,9 @@ export default function TextField(props) {
                     w-full
                     px-3
                     py-1.5
+                    text-opacity-80
                     text-primary
+                    focus:text-primary
                     bg-white bg-clip-padding
                     border-2 border-primary border-opacity-50
                     rounded" id={props.id} placeholder={props.placeholder}/>
