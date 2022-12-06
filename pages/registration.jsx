@@ -1,7 +1,7 @@
 import NavBar from "../components/navbar";
 import TextField from "../components/textfield";
 import Button from "../components/button";
-import Link from 'next/Link';
+import Link from 'next/link';
 
 export default function Registration() {
     return(
