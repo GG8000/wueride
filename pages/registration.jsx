@@ -15,7 +15,7 @@ export default function Registration() {
                 <TextField type="password" label="Passwort" placeholder="Xz89@1ffzgl1!_5x" id="pw_input"/>
                 <TextField type="password" label="Passwort wiederholen" placeholder="Xz89@1ffzgl1!_5x" id="pw_conf_input"/>
                 <div className="w-80 mx-auto text-center py-4">
-                    <Button text="Registrieren" appearance="secondary" linkTo=""/>
+                    <Button text="Registrieren" appearance="secondary" linkTo="/notfound"/>
                 </div>
                 <div className="text-xs text-primary text-center w-80 mx-auto -mt-3">
                     <Link className=" text-primary text-opacity-30 hover:text-opacity-80" href="/signup">Du hast schon einen Account? Melde dich hier an</Link>
