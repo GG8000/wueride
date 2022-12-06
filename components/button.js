@@ -25,16 +25,16 @@ export default function Button(props) {
     } else if(props.appearance =="nav-prime") {
         return(
             <div className='font-outfit'>
-                <Link href={props.linkTo}>
+                <a href={props.linkTo}>
                     <div className='bg-primary text-white px-4 py-1 rounded-full'>
                         {props.text}
                     </div>
-                </Link>
+                </a>
             </div>
         )
     } else if(props.appearance == "nav-sec") {
         return(
-            <div className='font-outfit'>
+            <div>
                 <Link href={props.linkTo}>
                     <div className='bg-primary border-white border-2 text-white text-sm px-4 py-1 rounded-full w-1/2 mx-2'>
                         {props.text}
