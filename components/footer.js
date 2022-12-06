@@ -5,7 +5,7 @@ import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa';
 export default function Footer() {
     return(
         <div className="py-8">
-            <div className="flex justify-center gap-4 text-primary"> 
+            <div className="flex text-sm justify-center gap-4 text-primary"> 
                 <p><a href="#">Über uns</a></p>
                 <p><a href="#">Kontakt</a></p>
                 <p><a href="#">Impressum</a></p>
