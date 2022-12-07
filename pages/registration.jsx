@@ -8,12 +8,12 @@ export default function Registration() {
         <div>
             <NavBar/>
             <div className="pt-12 w-96 mx-auto">
-                <TextField type="text" label="Vorname" placeholder="Philonema" id="firstname_input"/>
-                <TextField type="text" label="Nachname" placeholder="Philosophie" id="lastname_input"/>
-                <TextField type="date" label="Geburtsdatum" placeholder="23.12.1983" id="birth_input"/>
-                <TextField type="email" label="E-Mail-Adresse" placeholder="name@wueride.de" id="email_input"/>
-                <TextField type="password" label="Passwort" placeholder="Xz89@1ffzgl1!_5x" id="pw_input"/>
-                <TextField type="password" label="Passwort wiederholen" placeholder="Xz89@1ffzgl1!_5x" id="pw_conf_input"/>
+                <TextField type="text" label="Vorname" placeholder="Philonema" id="firstname_input" width="full"/>
+                <TextField type="text" label="Nachname" placeholder="Philosophie" id="lastname_input" width="full"/>
+                <TextField type="date" label="Geburtsdatum" placeholder="23.12.1983" id="birth_input" width="full"/>
+                <TextField type="email" label="E-Mail-Adresse" placeholder="name@wueride.de" id="email_input" width="full"/>
+                <TextField type="password" label="Passwort" placeholder="Xz89@1ffzgl1!_5x" id="pw_input" width="full"/>
+                <TextField type="password" label="Passwort wiederholen" placeholder="Xz89@1ffzgl1!_5x" id="pw_conf_input" width="full"/>
                 <div className="w-80 mx-auto text-center py-4">
                     <Button text="Registrieren" appearance="secondary" linkTo="/notfound"/>
                 </div>
