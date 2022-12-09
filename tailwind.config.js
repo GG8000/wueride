@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     colors: {
       'primary': '#1F5393',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'grey':  'B2B2B2',
     },
     extend: {
       fontFamily: {
