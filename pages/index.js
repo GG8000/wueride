@@ -1,16 +1,11 @@
 import Head from 'next/head';
 import NavBar from '../components/navbar';
-import Button from '../components/button';
 import Footer from '../components/footer';
 import Image from 'next/image';
 import icon_car_image from "../public/icon_ride_sharing.png";
 import umfrage from "../public/umfrage.png";
 import hands from "../public/hands.png";
 import clock from "../public/time_clock.png";
-import people from "../public/more_people.png";
-import Testimonials from '../components/testimonials';
-import TestiCard from '../components/testimonials_card';
-
 
 export default function Home() {
   return (
@@ -31,11 +26,14 @@ export default function Home() {
             <div className='sm:my-auto sm:mx-auto sm:pl-12'>
               <h1 className='text-2xl text-white pb-4' >RideSharing am Campus Hubland</h1>
               <div className='flex justify-center items-center text-center px-10 pb-5'>
-                <Button text="Mitfahren" appearance="primary" linkTo="ridesearch"/>
-                <Button text="Fahrt anbieten" appearance="secondary" linkTo="rideoffer"/>
+                <button className='btn--primary'>Mitfahren</button>
+                <button className='btn--secondary'>Fahrt suchen</button>
               </div>
             </div>
           </div>
+          </section>
+
+          <section className='min-h-screen'>
           <div className='pb-8'>
             <h2 className='text-primary py-5 text-center text-lg'>Warum RideSharing am Campus Hubland?</h2>
             <div className='sm:flex sm:justify-center'>

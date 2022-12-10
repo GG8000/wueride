@@ -20,6 +20,28 @@ a {
   box-sizing: border-box;
 }
 
+@layer components {
+  .btn--primary {
+    @apply bg-white hover:bg-primary border-white border-2 text-primary hover:text-white text-center text-sm px-4 py-1 rounded-full mx-2;
+  }
+  
+  .btn--secondary {
+    @apply bg-primary hover:bg-white  border-white hover:border-primary border-2 text-white hover:text-primary text-sm px-4 py-1 rounded-full mx-2;
+  }
+  
+  .btn--nav-prime {
+    @apply bg-primary text-white px-4 py-1 rounded-full;
+  }
+  
+  .btn--nav-sec {
+    @apply bg-primary border-white border-2 text-white text-sm px-4 py-1 rounded-full mx-2;
+  }
+}
+
+
+
+
+
 @font-face {
   font-family: "Outfit";
   src: url('../public/Outfit-VariableFont_wght.ttf');
