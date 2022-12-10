@@ -3,6 +3,7 @@ import Button from "../components/button";
 import Link from "next/link";
 
 export default function RideOffer() {
+
     return(
         <div className="font-outfit">
             <NavBar/>

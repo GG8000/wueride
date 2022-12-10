@@ -1,51 +1,62 @@
 import Script from 'next/script';
+import {FaUserAlt} from 'react-icons/fa';
+import {AiFillEyeInvisible} from 'react-icons/ai';
+import {AiFillEye} from 'react-icons/ai';
+import { useState } from 'react';
+
+
 //props: id type label placeholder width
-export default function TextField(props) {
-    
-    if(props.width == "full")
-    {
-        return(
-            <div>
-                <div className="flex justify-center font-outfit">
-                    <div className="form-floating mb-3 w-80">
-                        <label for={props.id} className="text-primary">{props.label}</label>
-                        <input type={props.type} className="form-control
-                        block
-                        px-3
-                        w-full
-                        py-1.5
-                        h-8
-                        text-opacity-80
-                        text-primary
-                        focus:text-primary
-                        bg-white bg-clip-padding
-                        border-2 border-primary border-opacity-50
-                        rounded" id={props.id} placeholder={props.placeholder}/>
-                    </div>
-                </div>
-            </div>
-        )
-    } else {
-        return(
-            <div>
-                <div className="flex justify-center font-outfit">
-                    <div className="form-floating mb-3 w-80">
-                        <label for={props.id} className="text-primary">{props.label}</label>
-                        <input type={props.type} className="form-control
-                        block
-                        px-3
-                        w-1/2
-                        py-1.5
-                        h-8
-                        text-opacity-80
-                        text-primary
-                        focus:text-primary
-                        bg-white bg-clip-padding
-                        border-2 border-primary border-opacity-50
-                        rounded" id={props.id} placeholder={props.placeholder}/>
-                    </div>
-                </div>
-            </div>
-        )
+export default function TextField({id, type, label, icon}) {
+
+    const [showPassword, setShowPassword] = useState(false);
+
+    const togglePassword = () => {
+        setShowPassword(current => !current);
     }
+
+
+    switch (icon) {
+        case "user": 
+            icon = <FaUserAlt className='disabled'/>
+            break;
+        case "pw":
+            if(showPassword) {
+                icon = <AiFillEyeInvisible/>
+                type ="text"
+            }
+            else {
+                icon = <AiFillEye/>
+                type = "password"
+            }
+            
+            break;
+        default:
+            icon = <FaUserAlt/>
+            break;
+    }
+
+    
+
+    return(
+        <div>
+            <div className="flex justify-center font-outfit">
+                <div className="form-floating mb-3 w-80 relative">
+                    <button onClick={togglePassword} className='text-primary absolute right-2 top-2 '>
+                        {icon}
+                    </button>
+                    <input type={type} className='form-control
+                    block
+                    py-1.5
+                    w-full
+                    h-8
+                    text-opacity-80
+                    text-primary
+                    focus:text-primary
+                    bg-white bg-clip-padding
+                    border-b-2 border-primary border-opacity-50' id={id} placeholder={label}/>
+
+                </div>
+            </div>
+        </div>
+    )
 };
