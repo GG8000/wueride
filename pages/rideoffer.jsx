@@ -1,5 +1,4 @@
 import NavBar from "../components/navbar";
-import Button from "../components/button";
 import Link from "next/link";
 
 export default function RideOffer() {

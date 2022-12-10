@@ -1,6 +1,4 @@
-import Button from "../components/button";
 import NavBar from "../components/navbar";
-import TextField from "../components/textfield";
 import { useState } from 'react'; 
 import Link from 'next/link';
 
