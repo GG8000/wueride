@@ -18,7 +18,7 @@ export default function Home() {
       
       <main className='bg-white font-outfit'>
         <NavBar/>
-        <section className='min-h-screen'>
+        <section className=''>
           <div className='sm:flex sm:flex-row-reverse sm:justify-center text-center sm:text-left bg-primary'>
             <div className='relative w-80 mx-auto py-4'>
               <Image src={icon_car_image} alt="car"/>
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           </section>
 
-          <section className='min-h-screen'>
+          <section className=''>
           <div className='pb-8'>
             <h2 className='text-primary py-5 text-center text-lg'>Warum RideSharing am Campus Hubland?</h2>
             <div className='sm:flex sm:justify-center'>
