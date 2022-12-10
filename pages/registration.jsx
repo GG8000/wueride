@@ -74,7 +74,7 @@ export default function Registration() {
                     
                 <TextField onChange={handleFirstnameChange} type="text" label="Vorname" placeholder="Philonema" id="firstname_input"/>
                 <TextField onChange={handleLastnameChange} type="text" label="Nachname" placeholder="Philosophie" id="lastname_input"/>
-                <TextField onChange={handleBirthdateChange} type="date" label="Geburtsdatum" placeholder="23.12.1983" id="birth_input"/>
+                <TextField onChange={handleBirthdateChange} type="text" label="Geburtsdatum" placeholder="23.12.1983" id="birth_input"/>
                 <TextField onChange={handleEmailChange} type="email" label="E-Mail-Adresse" placeholder="name@wueride.de" id="email_input"/>
                 <TextField onChange={handlePasswordChange} type="password" label="Passwort" placeholder="Xz89@1ffzgl1!_5x" id="pw_input" icon="pw"/>
                 <TextField onChange={handlePasswordConfirmationChange} type="password" label="Passwort wiederholen" placeholder="Xz89@1ffzgl1!_5x" id="pw_conf_input" icon="pw"/>
